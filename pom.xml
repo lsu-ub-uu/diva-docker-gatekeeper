@@ -32,8 +32,6 @@
 	<name>DiVA gatekeeper docker</name>
 
 	<properties>
-		<!-- <outputDirectory>${project.build.directory}/docker</outputDirectory> -->
-		<!-- temporarily using docker2 as builddir, see: https://github.com/spotify/dockerfile-maven/issues/75 -->
 		<outputDirectory>${project.build.directory}/docker2</outputDirectory>
 
 		<diva.version>0.1-SNAPSHOT</diva.version>
