@@ -1,6 +1,6 @@
 FROM  tomcat:jre8-alpine
 
-COPY /storagefiles /mnt/data/basicstorage
+#COPY /storagefiles /mnt/data/basicstorage
 
 COPY /gatekeeper.war /usr/local/tomcat/webapps/gatekeeper.war
 COPY /gatekeeper.xml /usr/local/tomcat/conf/Catalina/localhost/gatekeeper.xml

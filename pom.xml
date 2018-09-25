@@ -36,7 +36,7 @@
 
 		<diva.version>0.1-SNAPSHOT</diva.version>
 		<gatekeeper.version>0.2-SNAPSHOT</gatekeeper.version>
-		<basicstorage.version>0.5-SNAPSHOT</basicstorage.version>
+<!-- 		<basicstorage.version>0.5-SNAPSHOT</basicstorage.version> -->
 	</properties>
 
 	<scm>
@@ -74,12 +74,12 @@
 			<type>war</type>
 			<scope>compile</scope>
 		</dependency>
-		<dependency>
-			<groupId>se.uu.ub.cora</groupId>
-			<artifactId>basicstorage</artifactId>
-			<version>${basicstorage.version}</version>
-			<scope>compile</scope>
-		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>se.uu.ub.cora</groupId> -->
+<!-- 			<artifactId>basicstorage</artifactId> -->
+<!-- 			<version>${basicstorage.version}</version> -->
+<!-- 			<scope>compile</scope> -->
+<!-- 		</dependency> -->
 	</dependencies>
 
 	<build>
@@ -125,31 +125,31 @@
 							<stripVersion>true</stripVersion>
 						</configuration>
 					</execution>
-					<execution>
-						<id>unpack</id>
-						<phase>package</phase>
-						<goals>
-							<goal>unpack</goal>
-						</goals>
-						<configuration>
-							<artifactItems>
-								<artifactItem>
-									<groupId>se.uu.ub.cora</groupId>
-									<artifactId>basicstorage</artifactId>
-									<version>${basicstorage.version}</version>
-									<type>jar</type>
-									<overWrite>true</overWrite>
-									<outputDirectory>${outputDirectory}</outputDirectory>
-									<includes>**/*.json</includes>
-								</artifactItem>
-							</artifactItems>
-							<includes>**/*.java</includes>
-							<excludes>**/*.properties</excludes>
-							<outputDirectory>${project.build.directory}/wars</outputDirectory>
-							<overWriteReleases>false</overWriteReleases>
-							<overWriteSnapshots>true</overWriteSnapshots>
-						</configuration>
-					</execution>
+<!-- 					<execution> -->
+<!-- 						<id>unpack</id> -->
+<!-- 						<phase>package</phase> -->
+<!-- 						<goals> -->
+<!-- 							<goal>unpack</goal> -->
+<!-- 						</goals> -->
+<!-- 						<configuration> -->
+<!-- 							<artifactItems> -->
+<!-- 								<artifactItem> -->
+<!-- 									<groupId>se.uu.ub.cora</groupId> -->
+<!-- 									<artifactId>basicstorage</artifactId> -->
+<!-- 									<version>${basicstorage.version}</version> -->
+<!-- 									<type>jar</type> -->
+<!-- 									<overWrite>true</overWrite> -->
+<!-- 									<outputDirectory>${outputDirectory}</outputDirectory> -->
+<!-- 									<includes>**/*.json</includes> -->
+<!-- 								</artifactItem> -->
+<!-- 							</artifactItems> -->
+<!-- 							<includes>**/*.java</includes> -->
+<!-- 							<excludes>**/*.properties</excludes> -->
+<!-- 							<outputDirectory>${project.build.directory}/wars</outputDirectory> -->
+<!-- 							<overWriteReleases>false</overWriteReleases> -->
+<!-- 							<overWriteSnapshots>true</overWriteSnapshots> -->
+<!-- 						</configuration> -->
+<!-- 					</execution> -->
 				</executions>
 			</plugin>
 			<plugin>
