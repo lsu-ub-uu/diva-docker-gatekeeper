@@ -28,15 +28,14 @@
 
 	<artifactId>diva-docker-gatekeeper</artifactId>
 	<packaging>pom</packaging>
-	<version>0.1-SNAPSHOT</version>
+	<version>0.2-SNAPSHOT</version>
 	<name>DiVA gatekeeper docker</name>
 
 	<properties>
 		<outputDirectory>${project.build.directory}/docker2</outputDirectory>
 
 		<diva.version>0.1-SNAPSHOT</diva.version>
-		<gatekeeper.version>0.2-SNAPSHOT</gatekeeper.version>
-<!-- 		<basicstorage.version>0.5-SNAPSHOT</basicstorage.version> -->
+		<gatekeeper.version>0.3-SNAPSHOT</gatekeeper.version>
 	</properties>
 
 	<scm>
