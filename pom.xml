@@ -23,19 +23,19 @@
 	<parent>
 		<groupId>se.uu.ub.cora</groupId>
 		<artifactId>cora-parent</artifactId>
-		<version>0.6-SNAPSHOT</version>
+		<version>0.7-SNAPSHOT</version>
 	</parent>
 
 	<artifactId>diva-docker-gatekeeper</artifactId>
 	<packaging>pom</packaging>
-	<version>0.3-SNAPSHOT</version>
+	<version>0.4-SNAPSHOT</version>
 	<name>DiVA gatekeeper docker</name>
 
 	<properties>
 		<outputDirectory>${project.build.directory}/docker2</outputDirectory>
 
-		<diva.version>0.2-SNAPSHOT</diva.version>
-		<gatekeeper.version>0.3-SNAPSHOT</gatekeeper.version>
+		<diva.version>0.3-SNAPSHOT</diva.version>
+		<gatekeeper.version>0.4-SNAPSHOT</gatekeeper.version>
 	</properties>
 
 	<scm>
@@ -44,20 +44,6 @@
 		<url>https://github.com/lsu-ub-uu/diva-docker-gatekeeper.git</url>
 	</scm>
 
-	<repositories>
-		<repository>
-			<id>maven-public</id>
-			<name>LSU Nexus Repository</name>
-			<url>http://epc.ub.uu.se/nexus/repository/maven-public/</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<updatePolicy>daily</updatePolicy>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository>
-	</repositories>
 
 	<dependencies>
 		<dependency>
@@ -73,12 +59,6 @@
 			<type>war</type>
 			<scope>compile</scope>
 		</dependency>
-<!-- 		<dependency> -->
-<!-- 			<groupId>se.uu.ub.cora</groupId> -->
-<!-- 			<artifactId>basicstorage</artifactId> -->
-<!-- 			<version>${basicstorage.version}</version> -->
-<!-- 			<scope>compile</scope> -->
-<!-- 		</dependency> -->
 	</dependencies>
 
 	<build>
@@ -106,7 +86,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-dependency-plugin</artifactId>
-				<version>3.0.0</version>
+				<version>3.1.1</version>
 				<executions>
 					<execution>
 						<id>copy-dependencies</id>
@@ -124,31 +104,6 @@
 							<stripVersion>true</stripVersion>
 						</configuration>
 					</execution>
-<!-- 					<execution> -->
-<!-- 						<id>unpack</id> -->
-<!-- 						<phase>package</phase> -->
-<!-- 						<goals> -->
-<!-- 							<goal>unpack</goal> -->
-<!-- 						</goals> -->
-<!-- 						<configuration> -->
-<!-- 							<artifactItems> -->
-<!-- 								<artifactItem> -->
-<!-- 									<groupId>se.uu.ub.cora</groupId> -->
-<!-- 									<artifactId>basicstorage</artifactId> -->
-<!-- 									<version>${basicstorage.version}</version> -->
-<!-- 									<type>jar</type> -->
-<!-- 									<overWrite>true</overWrite> -->
-<!-- 									<outputDirectory>${outputDirectory}</outputDirectory> -->
-<!-- 									<includes>**/*.json</includes> -->
-<!-- 								</artifactItem> -->
-<!-- 							</artifactItems> -->
-<!-- 							<includes>**/*.java</includes> -->
-<!-- 							<excludes>**/*.properties</excludes> -->
-<!-- 							<outputDirectory>${project.build.directory}/wars</outputDirectory> -->
-<!-- 							<overWriteReleases>false</overWriteReleases> -->
-<!-- 							<overWriteSnapshots>true</overWriteSnapshots> -->
-<!-- 						</configuration> -->
-<!-- 					</execution> -->
 				</executions>
 			</plugin>
 			<plugin>
