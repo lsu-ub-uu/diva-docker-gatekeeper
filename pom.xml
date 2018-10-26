@@ -34,7 +34,7 @@
 	<properties>
 		<outputDirectory>${project.build.directory}/docker2</outputDirectory>
 
-		<diva.version>0.3-SNAPSHOT</diva.version>
+		<diva.version>0.4-SNAPSHOT</diva.version>
 		<gatekeeper.version>0.4-SNAPSHOT</gatekeeper.version>
 	</properties>
 
