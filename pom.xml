@@ -23,19 +23,19 @@
 	<parent>
 		<groupId>se.uu.ub.cora</groupId>
 		<artifactId>cora-parent</artifactId>
-		<version>0.7-SNAPSHOT</version>
+		<version>0.8-SNAPSHOT</version>
 	</parent>
 
 	<artifactId>diva-docker-gatekeeper</artifactId>
 	<packaging>pom</packaging>
-	<version>0.4-SNAPSHOT</version>
+	<version>0.5-SNAPSHOT</version>
 	<name>DiVA gatekeeper docker</name>
 
 	<properties>
 		<outputDirectory>${project.build.directory}/docker2</outputDirectory>
 
-		<diva.version>0.4-SNAPSHOT</diva.version>
-		<gatekeeper.version>0.4-SNAPSHOT</gatekeeper.version>
+		<diva.version>0.5-SNAPSHOT</diva.version>
+		<gatekeeper.version>0.5-SNAPSHOT</gatekeeper.version>
 	</properties>
 
 	<scm>
