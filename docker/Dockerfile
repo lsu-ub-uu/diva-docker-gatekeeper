@@ -1,11 +1,10 @@
 FROM  tomcat:9.0-jre11-slim
 
-#COPY /storagefiles /mnt/data/basicstorage
+COPY /gatekeeperserver*.war /usr/local/tomcat/webapps/gatekeeperserver.war
+COPY /gatekeeperserver.xml /usr/local/tomcat/conf/Catalina/localhost/gatekeeperserver.xml
 
-COPY /gatekeeper.war /usr/local/tomcat/webapps/gatekeeper.war
-COPY /gatekeeper.xml /usr/local/tomcat/conf/Catalina/localhost/gatekeeper.xml
-COPY /diva.jar /usr/local/tomcat/lib/diva.jar
-
+COPY /*.jar /usr/local/tomcat/lib/
+COPY /*.properties /usr/local/tomcat/lib/
 
 #build with:
 #maven build

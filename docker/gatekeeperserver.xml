@@ -1,0 +1,4 @@
+<Context>
+	<Parameter name="storageOnDiskBasePath" value="/mnt/data/basicstorage/" override="false" />
+	<Parameter name="guestUserId" value="coraUser:5368656924943436" override="false"/>
+</Context>
