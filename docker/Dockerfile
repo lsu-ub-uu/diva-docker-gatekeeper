@@ -1,4 +1,4 @@
-FROM  tomcat:9.0-jre11-slim
+FROM  tomcat:9.0.27-jdk12-adoptopenjdk-hotspot
 
 COPY /gatekeeperserver*.war /usr/local/tomcat/webapps/gatekeeperserver.war
 COPY /gatekeeperserver.xml /usr/local/tomcat/conf/Catalina/localhost/gatekeeperserver.xml
