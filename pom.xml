@@ -27,6 +27,7 @@
 	<properties>
 		<outputDirectory>${project.build.directory}/docker2</outputDirectory>
 		<storage.version>2.1.0</storage.version>
+		<searchstorage.version>2.0.0</searchstorage.version>
 		<basicstorage.version>2.1.0</basicstorage.version>
 		<gatekeeperserver.version>2.1.0</gatekeeperserver.version>
 		<userpicker.version>2.0.0</userpicker.version>
@@ -53,6 +54,12 @@
 			<groupId>se.uu.ub.cora</groupId>
 			<artifactId>storage</artifactId>
 			<version>${storage.version}</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>se.uu.ub.cora</groupId>
+			<artifactId>searchstorage</artifactId>
+			<version>${searchstorage.version}</version>
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
