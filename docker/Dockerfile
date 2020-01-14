@@ -1,9 +1,8 @@
 FROM  tomcat:9.0.27-jdk12-adoptopenjdk-hotspot
 
-COPY /gatekeeperserver*.war /usr/local/tomcat/webapps/gatekeeperserver.war
+COPY /diva-gatekeeper-war*.war /usr/local/tomcat/webapps/gatekeeperserver.war
 COPY /gatekeeperserver.xml /usr/local/tomcat/conf/Catalina/localhost/gatekeeperserver.xml
 
-COPY /*.jar /usr/local/tomcat/lib/
 COPY /*.properties /usr/local/tomcat/lib/
 
 #build with:
