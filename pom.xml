@@ -16,7 +16,7 @@
 	<parent>
 		<groupId>se.uu.ub.cora</groupId>
 		<artifactId>cora-parent</artifactId>
-		<version>1.4.1</version>
+		<version>1.4.4</version>
 	</parent>
 
 	<artifactId>diva-docker-gatekeeper</artifactId>
@@ -28,8 +28,8 @@
 		<outputDirectory>${project.build.directory}/docker2</outputDirectory>
 		<exec-maven-plugin.version>3.0.0</exec-maven-plugin.version>
 
-		<cora-docker-tomcat.version>1.2.1</cora-docker-tomcat.version>
-		<divagatekeeperwar.version>1.7-SNAPSHOT</divagatekeeperwar.version>
+		<cora-docker-tomcat.version>2.0.0</cora-docker-tomcat.version>
+		<divagatekeeperwar.version>2.1-SNAPSHOT</divagatekeeperwar.version>
 	</properties>
 
 	<scm>
