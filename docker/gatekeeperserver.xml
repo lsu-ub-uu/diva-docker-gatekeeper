@@ -1,9 +1,15 @@
 <Context>
-	<Parameter name="databaseLookupName"
-		value="java:/comp/env/jdbc/postgres" override="false" />
-	<Resource name="jdbc/postgres" auth="Container"
-		type="javax.sql.DataSource" driverClassName="org.postgresql.Driver"
-		url="jdbc:postgresql://diva-docker-mock-classic-postgresql/diva"
+	<Parameter name="coraDatabaseLookupName" value="java:/comp/env/jdbc/coraPostgres" override="false" />
+	<Resource name="jdbc/coraPostgres" auth="Container" type="javax.sql.DataSource"
+		driverClassName="org.postgresql.Driver"
+		url="jdbc:postgresql://diva-cora-docker-postgresql:5432/diva"
+		username="diva" password="diva" maxTotal="20" maxIdle="10"
+		maxWaitMillis="-1" />
+
+	<Parameter name="databaseLookupName" value="java:/comp/env/jdbc/postgres" override="false" />
+	<Resource name="jdbc/postgres" auth="Container" type="javax.sql.DataSource"
+		driverClassName="org.postgresql.Driver"
+		url="jdbc:postgresql://diva-docker-mock-classic-postgresql:5432/diva"
 		username="diva" password="diva" maxTotal="20" maxIdle="10"
 		maxWaitMillis="-1" />
 
