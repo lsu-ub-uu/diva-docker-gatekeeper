@@ -7,4 +7,6 @@
 	
 	<Parameter name="guestUserId"
 		value="coraUser:5368656924943436" override="false" />
+		
+	<Parameter name="doNotCache" value="true" override="false" />
 </Context>
