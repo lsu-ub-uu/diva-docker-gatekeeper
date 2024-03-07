@@ -26,10 +26,10 @@
 
 	<properties>
 		<outputDirectory>${project.build.directory}/docker2</outputDirectory>
-		<exec-maven-plugin.version>3.0.0</exec-maven-plugin.version>
+		<exec-maven-plugin.version>3.2.0</exec-maven-plugin.version>
 		<cora-docker-tomcat.version>2.2.0</cora-docker-tomcat.version>
 		
-		<divagatekeeperwar.version>2.9-SNAPSHOT</divagatekeeperwar.version>
+		<divagatekeeperwar.version>2.10-SNAPSHOT</divagatekeeperwar.version>
 	</properties>
 
 	<scm>
