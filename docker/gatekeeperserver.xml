@@ -8,7 +8,7 @@
 	<Parameter name="guestUserId"
 		value="coraUser:5368656924943436" override="false" />
 		
-	<Parameter name="doNotCache" value="true" override="false" />
+	<Parameter name="doNotCache" value="false" override="false" />
 	
 	<Parameter name="rabbitMqHostname" value="diva-rabbitmq" override="false" />
 	<Parameter name="rabbitMqPort" value="5672" override="false" />
