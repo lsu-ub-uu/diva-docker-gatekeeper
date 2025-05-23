@@ -27,6 +27,9 @@
 	<properties>
 		<cora-docker-tomcat.version>2.5.0</cora-docker-tomcat.version>
 		<divagatekeeperwar.version>2.21-SNAPSHOT</divagatekeeperwar.version>
+		<!-- Override property so docker-build profile activates in this module -->
+		<docker.build.activate>true</docker.build.activate>
+		<dockerNameAndVersion>diva-docker-gatekeeper:${project.version}</dockerNameAndVersion>
 	</properties>
 
 	<scm>
@@ -92,7 +95,7 @@
 							<arguments>
 								<argument>build</argument>
 								<argument>-t</argument>
-								<argument>${project.artifactId}:${project.version}</argument>
+								<argument>${dockerNameAndVersion}</argument>
 								<argument>--build-arg</argument>
 								<argument>CORA_DOCKER_VERSION=${cora-docker-tomcat.version}</argument>
 								<argument>.</argument>
