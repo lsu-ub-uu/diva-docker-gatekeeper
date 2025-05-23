@@ -15,8 +15,8 @@
 
 	<parent>
 		<groupId>se.uu.ub.cora</groupId>
-		<artifactId>cora-parent</artifactId>
-		<version>2.7.0</version>
+		<artifactId>cora-parent-docker</artifactId>
+		<version>1.1.0</version>
 	</parent>
 
 	<artifactId>diva-docker-gatekeeper</artifactId>
@@ -25,10 +25,7 @@
 	<name>DiVA gatekeeper docker</name>
 
 	<properties>
-		<outputDirectory>${project.build.directory}/docker2</outputDirectory>
-		<exec-maven-plugin.version>3.5.0</exec-maven-plugin.version>
 		<cora-docker-tomcat.version>2.5.0</cora-docker-tomcat.version>
-		
 		<divagatekeeperwar.version>2.21-SNAPSHOT</divagatekeeperwar.version>
 	</properties>
 
@@ -58,26 +55,6 @@
 
 	<build>
 		<plugins>
-			<plugin>
-				<artifactId>maven-resources-plugin</artifactId>
-				<executions>
-					<execution>
-						<id>copy-resources</id>
-						<phase>process-resources</phase>
-						<goals>
-							<goal>copy-resources</goal>
-						</goals>
-						<configuration>
-							<outputDirectory>${outputDirectory}</outputDirectory>
-							<resources>
-								<resource>
-									<directory>docker</directory>
-								</resource>
-							</resources>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-dependency-plugin</artifactId>
