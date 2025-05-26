@@ -25,7 +25,7 @@
 	<name>DiVA gatekeeper docker</name>
 
 	<properties>
-		<cora-docker-tomcat.version>2.5.0</cora-docker-tomcat.version>
+		<cora-docker-tomcat.version>2.6.0</cora-docker-tomcat.version>
 		<divagatekeeperwar.version>2.21-SNAPSHOT</divagatekeeperwar.version>
 		<!-- Override property so docker-build profile activates in this module -->
 		<docker.build.activate>true</docker.build.activate>
